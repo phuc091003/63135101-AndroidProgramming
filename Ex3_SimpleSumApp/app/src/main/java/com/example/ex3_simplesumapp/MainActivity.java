@@ -1,6 +1,7 @@
 package com.example.ex3_simplesumapp;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    //Bo lang nghe va xu ly su kien click len nut tinh tong
+    public void XuLyCong(View view){
+        //Tim va tham chieu den dieu khien tren tep XML
+        EditText editTextSoA = findViewById(R.id.edtA);
+        EditText editTextSoB = findViewById(R.id.edtB);
+        EditText editTextKetQua = findViewById(R.id.edtKQ);
     }
 }
