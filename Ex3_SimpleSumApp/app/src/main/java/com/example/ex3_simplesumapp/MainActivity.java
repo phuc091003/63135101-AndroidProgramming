@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,5 +29,17 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextSoA = findViewById(R.id.edtA);
         EditText editTextSoB = findViewById(R.id.edtB);
         EditText editTextKetQua = findViewById(R.id.edtKQ);
+        //Lay du lieu ve o dieu khien so a
+        String strA= editTextSoA.getText().toString();
+        //Lay du lieu ve o dieu khien so a
+        String strB= editTextSoB.getText().toString();
+        //Chuyen du lieu sang dang so
+        int so_A= Integer.parseInt(strA);
+        int so_B= Integer.parseInt(strB);
+        // Tinh toan theo yeu cau
+        int tong = so_A + so_B;
+        String strTong = String.valueOf(tong);
+        //Hien ra man hinh
+        editTextKetQua.setText(strTong);
     }
 }
