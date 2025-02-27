@@ -8,6 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextSo1 = (EditText) findViewById(R.id.edtSo1);
         EditText editTextSo2 = (EditText) findViewById(R.id.edtSo2);
         EditText editTextKQ = (EditText) findViewById(R.id.edtKetQua);
+        nutCong = (Button) findViewById(R.id.btnCong);
+        nutTru = (Button) findViewById(R.id.btnTru);
+        nutNhan = (Button) findViewById(R.id.btnNhan);
+        nutChia = (Button) findViewById(R.id.btnChia);
+
     }
     void XuLyCong(View v){
         //b1 tìm edittext số 1 và số 2
