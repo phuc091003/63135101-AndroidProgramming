@@ -1,4 +1,7 @@
 # 63135101-AndroidProgramming
+<div align="center">
+  <img height="400" src="https://proeffico.com/wp-content/uploads/2023/10/mobile-application-digital-marketing.gif"  />
+</div>
 <h2 align="center">Hi 👋, Mình là Nguyễn Hữu Phúc</h2>
 <p align="center">
   <h3 align="center">Đây là nơi để hiển thị những ứng dụng mà mình làm trong quá trình học môn android </h3>
