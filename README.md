@@ -4,4 +4,4 @@
   <h3 align="center">Đây là nơi để hiển thị những ứng dụng mà mình làm trong quá trình học môn android </h3>
 </p>
 <h3 align="left"> Ex1-HelloWorld </h3>
-<img src="https://github.com/phuc091003/63135101-AndroidProgramming/tree/main/img/helloworld.png" width = "200"> 
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/img/helloworld.png" width ="200"> 
