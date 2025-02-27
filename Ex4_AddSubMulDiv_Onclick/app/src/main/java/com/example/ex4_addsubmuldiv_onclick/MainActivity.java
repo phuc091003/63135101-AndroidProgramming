@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
-    void TimDieuKhien(){
+    public void TimDieuKhien(){
         EditText editTextSo1 = (EditText) findViewById(R.id.edtSo1);
         EditText editTextSo2 = (EditText) findViewById(R.id.edtSo2);
         EditText editTextKQ = (EditText) findViewById(R.id.edtKetQua);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         nutChia = (Button) findViewById(R.id.btnChia);
 
     }
-    void XuLyCong(View v){
+    public void XuLyCong(View v){
         //b1 tìm edittext số 1 và số 2
         //b2 Lấy dữ liệu từ 2 điều khiển đó
         String soThu1 = editTextSo1.getText().toString();
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         editTextKQ.setText(chuoiKQ);
 
     }
-    void XuLyTru(View v){
+    public void XuLyTru(View v){
         //b1 tìm edittext số 1 và số 2
         //b2 Lấy dữ liệu từ 2 điều khiển đó
         String soThu1 = editTextSo1.getText().toString();
@@ -63,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
         float soA =  Float.parseFloat(soThu1);
         float soB =  Float.parseFloat(soThu2);
         // tính toán
-        float Tong = soA - soB;
-        String chuoiKQ = String.valueOf(Tong);
+        float Hieu = soA - soB;
+        String chuoiKQ = String.valueOf(Hieu);
         editTextKQ.setText(chuoiKQ);
 
     }
-    void XuLyNhan(View v){
+    public void XuLyNhan(View v){
         //b1 tìm edittext số 1 và số 2
         //b2 Lấy dữ liệu từ 2 điều khiển đó
         String soThu1 = editTextSo1.getText().toString();
@@ -77,12 +77,12 @@ public class MainActivity extends AppCompatActivity {
         float soA =  Float.parseFloat(soThu1);
         float soB =  Float.parseFloat(soThu2);
         // tính toán
-        float Tong = soA * soB;
-        String chuoiKQ = String.valueOf(Tong);
+        float Tich = soA * soB;
+        String chuoiKQ = String.valueOf(Tich);
         editTextKQ.setText(chuoiKQ);
 
     }
-    void XuLyChia(View v){
+    public void XuLyChia(View v){
         //b1 tìm edittext số 1 và số 2
         //b2 Lấy dữ liệu từ 2 điều khiển đó
         String soThu1 = editTextSo1.getText().toString();
@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
         float soA =  Float.parseFloat(soThu1);
         float soB =  Float.parseFloat(soThu2);
         // tính toán
-        float Tong = soA / soB;
-        String chuoiKQ = String.valueOf(Tong);
+        float Chia = soA / soB;
+        String chuoiKQ = String.valueOf(Chia);
         editTextKQ.setText(chuoiKQ);
     }
 }
