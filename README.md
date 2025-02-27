@@ -12,4 +12,11 @@
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex2.png" width = "200">
 <h3 align="left"> Ex3_SimpleSumApp </h3>
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/Ex3 App tinh tong.png" width = "200">
+<div>
+<h3 align="left"> Ex3_SimpleSumApp </h3>
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/EX4 app tinh toan.png" width = "200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex4 app tinh toan.png" width = "200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/EX4 app tinh toan chia.png" width = "200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/EX4 app tinh toan nhan.png" width = "200">
+</div>
 
