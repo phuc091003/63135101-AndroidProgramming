@@ -15,7 +15,7 @@
         android:id="@+id/imgLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/iconBMI"
+        android:src="@drawable/iconbmi"
         android:layout_gravity="center"
         android:contentDescription="BMI Logo"/>
     <RadioGroup
@@ -44,9 +44,15 @@
         android:hint="Nhập cân nặng (kg)"
         android:inputType="numberDecimal"
         android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/edtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập chiều cao (cm)"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"/>
     <Button
         android:text="Tính BMI"
-        android:onClick="onCalculateClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"/>
@@ -58,8 +64,12 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="BMI: "/>
-    <
 
-
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/normalbmi" />
 
 </LinearLayout>
