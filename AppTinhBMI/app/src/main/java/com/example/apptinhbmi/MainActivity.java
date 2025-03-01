@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
             updateCategoryImage(category);
         }
     }
-    public String getBMICategory (double bmi, boolean isWHO) {
+
+    public String getBMICategory(double bmi, boolean isWHO) {
         if (isWHO) {
             if (bmi < 18.5) return "Cân nặng thấp (gầy) bạn cần ăn thêm ";
             else if (bmi < 24.9) return "Cơ thể bạn ở mức bình thường nên duy trì";
@@ -59,12 +60,15 @@ public class MainActivity extends AppCompatActivity {
             else return "Béo phì độ I bạn cần phải giảm cân";
         } else {
             if (bmi < 18.5) return "Cân nặng thấp (gầy) bạn cần ăn thêm ";
-            else if (bmi < 24.9) return "Cơ thể bạn ở mức bình thường nên duy trì";
-            else if (bmi < 29.9) return "Tiền béo phì bạn cần chú ý tới thuc đơn hằng ngày";
-            else if (bmi < 34.9) return "Béo phì độ I bạn cần phải giảm cân";
-            else re
-
-
+            else if (bmi < 22.9) return "Cơ thể bạn ở mức bình thường nên duy trì";
+            else if (bmi < 24.9) return "Tiền béo phì bạn cần chú ý tới thuc đơn hằng ngày";
+            else if (bmi < 29.9) return "Béo phì độ I bạn cần phải giảm cân";
+            else return "Béo phì độ II";
         }
-
     }
+    private void updateCategoryImage(String category){
+        if(category.contains("gầy")){
+            imgCategory.setImageResource(R.drawable.underweight);
+        }
+    }
+}
