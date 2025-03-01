@@ -36,15 +36,22 @@ public class MainActivity extends AppCompatActivity {
         radioIDI = findViewById(R.id.radioIDI);
     }
 
-    public void onCalculateClick(View view){
+    public void onCalculateClick(View view) {
         String weightStr = edtWeight.getText().toString();
         String heightStr = edtHeight.getText().toString();
-        if(!weightStr.isEmpty() && !heightStr.isEmpty()){
+        if (!weightStr.isEmpty() && !heightStr.isEmpty()) {
             double weight = Double.parseDouble(weightStr);
-            double height = Double.parseDouble(heightStr)/100;// chuyển đổi sang cm
-            double bmi = weight/(height*height);
+            double height = Double.parseDouble(heightStr) / 100;// chuyển đổi sang cm
+            double bmi = weight / (height * height);
             boolean isWho = radioWho.isChecked();
             String category = getBMICategory(bmi, isWho);
+            txtResult.setText(String.format("BMI: %.2f (%s)", bmi, category));
+            updateCategoryImage(category);
+        }
+    }
+    public String getBMICategory (double bmi, boolean isWHO){
+        if(isWHO){
+            
         }
     }
 }
