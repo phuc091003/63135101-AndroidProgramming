@@ -7,18 +7,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
+    public EditText edtWeight, edtHeight;
+    public TextView txtResult;
+    public ImageView imgCategory;
+    public RadioGroup radioGroup;
+    public RadioButton radioWho, radioIDI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        edtWeight = findViewById(R.id.edtWeight);
+        edtHeight = findViewById(R.id.edtHeight);
+        txtResult = findViewById(R.id.txtResult);
+        edtHeight = findViewById(R.id.edtHeight);
+        edtHeight = findViewById(R.id.edtHeight);
+        edtHeight = findViewById(R.id.edtHeight);
+        edtHeight = findViewById(R.id.edtHeight);
     }
 }
