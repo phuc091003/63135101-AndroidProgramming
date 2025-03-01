@@ -30,9 +30,21 @@ public class MainActivity extends AppCompatActivity {
         edtWeight = findViewById(R.id.edtWeight);
         edtHeight = findViewById(R.id.edtHeight);
         txtResult = findViewById(R.id.txtResult);
-        edtHeight = findViewById(R.id.edtHeight);
-        edtHeight = findViewById(R.id.edtHeight);
-        edtHeight = findViewById(R.id.edtHeight);
-        edtHeight = findViewById(R.id.edtHeight);
+        imgCategory = findViewById(R.id.imgCategory);
+        radioGroup = findViewById(R.id.radioGroup);
+        radioWho = findViewById(R.id.radioWHO);
+        radioIDI = findViewById(R.id.radioIDI);
+    }
+
+    public void onCalculateClick(View view){
+        String weightStr = edtWeight.getText().toString();
+        String heightStr = edtHeight.getText().toString();
+        if(!weightStr.isEmpty() && !heightStr.isEmpty()){
+            double weight = Double.parseDouble(weightStr);
+            double height = Double.parseDouble(heightStr)/100;// chuyển đổi sang cm
+            double bmi = weight/(height*height);
+            boolean isWho = radioWho.isChecked();
+            String category = getBMICategory(bmi, isWho);
+        }
     }
 }
