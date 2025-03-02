@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
     private void updateCategoryImage(String category){
         if(category.contains("gầy")){
             imgCategory.setImageResource(R.drawable.underweight);
-        }
+        } else if (category.contains("Bình thường")){
+            imgCategory.setImageResource((R.drawable.Normal));
+        } else if (ca)
     }
 }
