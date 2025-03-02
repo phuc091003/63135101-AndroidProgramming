@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         if(category.contains("gầy")){
             imgCategory.setImageResource(R.drawable.underweight);
         } else if (category.contains("Bình thường")){
-            imgCategory.setImageResource((R.drawable.Normal));
+            imgCategory.setImageResource((R.drawable.normal));
         } else if (category.contains("Tiền béo phì")){
             imgCategory.setImageResource(R.drawable.pre_obese);
         } else if (category.contains("Béo phì độ I")) {
