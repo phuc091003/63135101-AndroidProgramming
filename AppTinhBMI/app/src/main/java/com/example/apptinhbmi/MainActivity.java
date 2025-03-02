@@ -67,19 +67,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void updateCategoryImage(String category){
-        
-        if(category.contains("gầy")){
-            imgCategory.setImageResource(R.drawable.underweight);
-        } else if (category.contains("Bình thường")){
-            imgCategory.setImageResource((R.drawable.normal1));
-        } else if (category.contains("Tiền béo phì")){
-            imgCategory.setImageResource(R.drawable.pre_obese);
-        } else if (category.contains("Béo phì độ I")) {
-            imgCategory.setImageResource(R.drawable.obese1);
-        } else if (category.contains("Béo phì độ II")) {
-            imgCategory.setImageResource(R.drawable.obese2);
-        } else {
-            imgCategory.setImageResource(R.drawable.obese3);
-        }
+        imgCategory.setImageResource(R.drawable.anhbody);
     }
 }
