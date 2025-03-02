@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         String heightStr = edtHeight.getText().toString();
         if (!weightStr.isEmpty() && !heightStr.isEmpty()) {
             double weight = Double.parseDouble(weightStr);
-            double height = Double.parseDouble(heightStr) / 100;// chuyển đổi sang cm
+            double height = Double.parseDouble(heightStr)/100;
             double bmi = weight / (height * height);
             boolean isWho = radioWho.isChecked();
             String category = getBMICategory(bmi, isWho);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             else if (bmi < 29.9) return "Tiền béo phì bạn cần chú ý tới thuc đơn hằng ngày";
             else if (bmi < 34.9) return "Béo phì độ I bạn cần phải giảm cân";
             else if (bmi < 39.9) return "Béo phì độ II bạn cần phải giảm cân";
-            else return "Béo phì độ I bạn cần phải giảm cân";
+            else return "Béo phì độ III bạn cần phải giảm cân";
         } else {
             if (bmi < 18.5) return "Cân nặng thấp (gầy) bạn cần ăn thêm ";
             else if (bmi < 22.9) return "Cơ thể bạn ở mức bình thường nên duy trì";
@@ -67,10 +67,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void updateCategoryImage(String category){
+        
         if(category.contains("gầy")){
             imgCategory.setImageResource(R.drawable.underweight);
         } else if (category.contains("Bình thường")){
-            imgCategory.setImageResource((R.drawable.normal));
+            imgCategory.setImageResource((R.drawable.normal1));
         } else if (category.contains("Tiền béo phì")){
             imgCategory.setImageResource(R.drawable.pre_obese);
         } else if (category.contains("Béo phì độ I")) {
