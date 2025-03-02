@@ -19,4 +19,12 @@
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex4 app tinh toan chia.png" width = "200">
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex4 app tinh toan nhan.png" width = "200">
 </div>
+<div>
+<h3 align ="left"> AppBMI </h3>
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appbmi1.png" width ="200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appbmi2.png" width ="200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appBMI3.png" width ="200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appbmi4.png" width ="200">
+<h4 align ="left">sẽ cố update giao diện trong tương lai </h4>
+</div>
 
