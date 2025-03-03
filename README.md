@@ -27,4 +27,8 @@
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appbmi4.png" width ="200">
 <h4 align ="left">sẽ cố update giao diện trong tương lai </h4>
 </div>
-
+<div>
+<h3 align ="left"> Appdoidonvido </h3>
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appdoidonvido1.png" width ="200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appdoidonvido2.png" width ="200">
+</div>
