@@ -66,10 +66,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             result = value;
         }
-            resultText.setText(String.format("Kết quả: %.3f %s")
-
-        }
-
-        })
+            resultText.setText(String.format("Kết quả: %.3f %s", result, to));
     }
 }
