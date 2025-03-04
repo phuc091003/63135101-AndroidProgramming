@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextKQ;
     Button nutCong, nutTru, nutNhan, nutChia;
 
-    void TimDieuKhien() {
+    public void TimDieuKhien() {
         editTextSo1 = (EditText) findViewById(R.id.edtSo1);
         editTextSo2 = (EditText) findViewById(R.id.edtSo2);
         editTextKQ = (EditText) findViewById(R.id.edtKetQua);
