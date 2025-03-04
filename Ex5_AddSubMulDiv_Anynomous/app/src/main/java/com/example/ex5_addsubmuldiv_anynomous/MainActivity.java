@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener boLangNgheCong = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                XULY_CONG();
             }
         };
         nutCong.setOnClickListener(boLangNgheCong);
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         nutTru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                XULY_TRU();
 
             }
         });
@@ -52,15 +53,70 @@ public class MainActivity extends AppCompatActivity {
         nutNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                XULY_NHAN();
             }
         });
 
         nutChia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                XULY_CHIA();
             }
         });
+    }
+
+    void XULY_CONG(){
+        //b1 tìm edittext số 1 và số 2
+        //b2 Lấy dữ liệu từ 2 điều khiển đó
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        //Chuyển dữ liệu từ chuỗi sang số
+        float soA =  Float.parseFloat(soThu1);
+        float soB =  Float.parseFloat(soThu2);
+        // tính toán
+        float Tong = soA + soB;
+        String chuoiKQ = String.valueOf(Tong);
+        editTextKQ.setText(chuoiKQ);
+    }
+    void XULY_TRU(){
+        //b1 tìm edittext số 1 và số 2
+        //b2 Lấy dữ liệu từ 2 điều khiển đó
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        //Chuyển dữ liệu từ chuỗi sang số
+        float soA =  Float.parseFloat(soThu1);
+        float soB =  Float.parseFloat(soThu2);
+        // tính toán
+        float Hieu = soA - soB;
+        String chuoiKQ = String.valueOf(Hieu);
+        editTextKQ.setText(chuoiKQ);
+
+    }
+    void XULY_NHAN(){
+        //b1 tìm edittext số 1 và số 2
+        //b2 Lấy dữ liệu từ 2 điều khiển đó
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        //Chuyển dữ liệu từ chuỗi sang số
+        float soA =  Float.parseFloat(soThu1);
+        float soB =  Float.parseFloat(soThu2);
+        // tính toán
+        float Tich = soA * soB;
+        String chuoiKQ = String.valueOf(Tich);
+        editTextKQ.setText(chuoiKQ);
+
+    }
+    void XULY_CHIA(){
+        //b1 tìm edittext số 1 và số 2
+        //b2 Lấy dữ liệu từ 2 điều khiển đó
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        //Chuyển dữ liệu từ chuỗi sang số
+        float soA =  Float.parseFloat(soThu1);
+        float soB =  Float.parseFloat(soThu2);
+        // tính toán
+        float Chia = soA / soB;
+        String chuoiKQ = String.valueOf(Chia);
+        editTextKQ.setText(chuoiKQ);
     }
 }
