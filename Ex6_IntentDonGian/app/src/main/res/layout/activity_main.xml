@@ -12,13 +12,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Màn hình chính"
-        android:textSize="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:padding="20dp"/>
 
     <Button
+        android:id="@+id/btnMH2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Đây là màn hình 2"
+        android:backgroundTint="#24C9DE"/>
+    <Button
+        android:id="@+id/btnMH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đây là màn hình 3"
         android:backgroundTint="#24C9DE"/>
 
 </LinearLayout>
