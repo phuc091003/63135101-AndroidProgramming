@@ -32,3 +32,9 @@
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appdoidonvido1.png" width ="200">
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/appdoidonvido2.png" width ="200">
 </div>
+<div>
+<h3 align ="left"> Ex6_IntentDonGian </h3>
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex6.2.png" width ="200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex6.1.png" width ="200">
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex6.3.png" width ="200">
+</div>
