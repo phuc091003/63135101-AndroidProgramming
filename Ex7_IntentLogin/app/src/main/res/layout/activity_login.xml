@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1792F2"
+    android:background="@drawable/backgroundlogin"
     android:backgroundTint="@null"
     android:gravity="center_horizontal|center_vertical"
     android:orientation="vertical"
@@ -24,6 +24,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#FFC107"
         android:text="User name:"/>
     <EditText
         android:id="@+id/edtUsername"
@@ -39,6 +41,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#FFC107"
             android:text="Password:"/>
         <EditText
             android:id="@+id/edtPass"
@@ -51,5 +55,6 @@
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
         android:text="Đăng Nhập"/>
 </LinearLayout>
