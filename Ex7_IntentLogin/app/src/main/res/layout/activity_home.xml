@@ -23,6 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Chào mừng"/>
 
         <TextView
@@ -30,7 +31,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
-            android:text="Tên ở đây" />
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:text="Nguyễn Hữu Phúc" />
     </LinearLayout>
 
     <ImageView
