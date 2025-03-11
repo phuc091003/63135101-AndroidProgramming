@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/anh1"
     android:gravity="center_horizontal"
     tools:context=".HomeActivity">
 
@@ -22,12 +23,42 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello các bạn"
+            android:text="Chào mừng"/>
+
         <TextView
             android:id="@+id/tvUserName"
-            android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tên ở đây"/>
+            android:paddingLeft="10dp"
+            android:text="Tên ở đây" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="192dp"
+        android:layout_height="164dp"
+        android:background="@drawable/anhmainscreen"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="Quiz 1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_margin="5dp"
+            android:text="Quiz 2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_margin="5dp"
+            android:text="Quiz 3"/>
     </LinearLayout>
 </LinearLayout>
