@@ -44,3 +44,5 @@
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex7.2.png" width ="200">
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/ex7.3.png" width ="200">
 </div>
+<h3 align ="left"> ListView </h3>
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/Listview.png" width ="200">
