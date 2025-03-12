@@ -10,6 +10,7 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:background="#2CD01A1A"
         android:layout_height="40dp"
         android:gravity="center"
         android:textSize="16dp"
@@ -18,6 +19,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#4332BDCE"
         android:id="@+id/lvDS"/>
 
 </LinearLayout>
