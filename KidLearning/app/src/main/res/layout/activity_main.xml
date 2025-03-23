@@ -19,7 +19,7 @@
     <ImageView
         android:id="@+id/lamp"
         android:layout_width="200dp"
-        android:layout_height="290dp"
+        android:layout_height="400dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
         android:src="@drawable/lighttable" />
