@@ -25,5 +25,12 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/lighttable" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-136dp"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/kid_corner" />
+
 
 </RelativeLayout>
