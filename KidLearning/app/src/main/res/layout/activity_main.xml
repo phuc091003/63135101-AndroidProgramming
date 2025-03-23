@@ -26,17 +26,26 @@
         android:src="@drawable/lighttable" />
 
     <ImageView
+        android:id="@+id/kid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="-136dp"
         android:layout_marginTop="210dp"
         android:src="@drawable/kid_corner" />
     <ImageView
+        android:id="@+id/tivi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/tivi"
         android:layout_marginTop="260dp"
         android:layout_marginLeft="-135dp"/>
 
+    <ImageView
+        android:id="@+id/polygon"
+        android:layout_width="184dp"
+        android:layout_height="253dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/polygon" />
 
 </RelativeLayout>
