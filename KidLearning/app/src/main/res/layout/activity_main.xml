@@ -31,6 +31,12 @@
         android:layout_marginLeft="-136dp"
         android:layout_marginTop="210dp"
         android:src="@drawable/kid_corner" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tivi"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="-135dp"/>
 
 
 </RelativeLayout>
