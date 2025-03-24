@@ -50,3 +50,5 @@
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/loginpage.png" width ="200">
 <h3 align ="left"> DashBoard </h3>
 <img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/Dashboard.png" width ="200">
+<h3 align ="left"> KidLearningLandingPage </h3>
+<img src="https://github.com/phuc091003/63135101-AndroidProgramming/blob/main/img/kidlearninglandingpage.png" width ="200">
