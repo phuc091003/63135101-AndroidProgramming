@@ -33,4 +33,41 @@ public class MainActivity extends AppCompatActivity {
         edt2 = findViewById(R.id.edt2);
         edtKetQua = findViewById(R.id.edtKetQua);
     }
+    void XulyCong(View view){
+        String sothunhat = edt1.getText().toString();
+        String sothuhai = edt2.getText().toString();
+
+        float a = Integer.parseInt(sothunhat);
+        float b = Integer.parseInt(sothuhai);
+        float c = a + b;
+        edtKetQua.setText(String.valueOf(c));
+    }
+    void XulyTru(View view){
+        String sothunhat = edt1.getText().toString();
+        String sothuhai = edt2.getText().toString();
+
+        float a = Integer.parseInt(sothunhat);
+        float b = Integer.parseInt(sothuhai);
+        float c = a - b;
+        edtKetQua.setText(String.valueOf(c));
+    }
+    void XulyNhan(View view){
+        String sothunhat = edt1.getText().toString();
+        String sothuhai = edt2.getText().toString();
+
+        float a = Integer.parseInt(sothunhat);
+        float b = Integer.parseInt(sothuhai);
+        float c = a * b;
+        edtKetQua.setText(String.valueOf(c));
+    }
+    void XulyChia(View view){
+        String sothunhat = edt1.getText().toString();
+        String sothuhai = edt2.getText().toString();
+
+        float a = Integer.parseInt(sothunhat);
+        float b = Integer.parseInt(sothuhai);
+        float c = a / b;
+        edtKetQua.setText(String.valueOf(c));
+    }
+
 }
