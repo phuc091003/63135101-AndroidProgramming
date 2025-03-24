@@ -25,49 +25,56 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnCong = findViewById(R.id.btnCong);
-        btnTru = findViewById(R.id.btnTru);
-        btnNhan = findViewById(R.id.btnNhan);
-        btnChia = findViewById(R.id.btnChia);
-        edt1 = findViewById(R.id.edt1);
-        edt2 = findViewById(R.id.edt2);
-        edtKetQua = findViewById(R.id.edtKetQua);
+        TimDieuKhien();
     }
-    void XulyCong(View view){
+    public void TimDieuKhien(){
+        btnCong = (Button) findViewById(R.id.btnCong);
+        btnTru = (Button) findViewById(R.id.btnTru);
+        btnNhan = (Button) findViewById(R.id.btnNhan);
+        btnChia = (Button) findViewById(R.id.btnChia);
+        edt1 = (EditText) findViewById(R.id.edt1);
+        edt2 = (EditText) findViewById(R.id.edt2);
+        edtKetQua = (EditText) findViewById(R.id.edtKetQua);
+    }
+    public void XuLyCong(View view){
         String sothunhat = edt1.getText().toString();
         String sothuhai = edt2.getText().toString();
 
-        float a = Integer.parseInt(sothunhat);
-        float b = Integer.parseInt(sothuhai);
-        float c = a + b;
-        edtKetQua.setText(String.valueOf(c));
+        float a = Float.parseFloat(sothunhat);
+        float b = Float.parseFloat(sothuhai);
+        float Tong = a + b;
+        String chuoiKQ = String.valueOf(Tong);
+        edtKetQua.setText(String.valueOf(chuoiKQ));
     }
-    void XulyTru(View view){
+    public void XuLyTru(View view){
         String sothunhat = edt1.getText().toString();
         String sothuhai = edt2.getText().toString();
 
-        float a = Integer.parseInt(sothunhat);
-        float b = Integer.parseInt(sothuhai);
-        float c = a - b;
-        edtKetQua.setText(String.valueOf(c));
+        float a = Float.parseFloat(sothunhat);
+        float b = Float.parseFloat(sothuhai);
+        float Hieu = a - b;
+        String chuoiKQ = String.valueOf(Hieu);
+        edtKetQua.setText(String.valueOf(chuoiKQ));
     }
-    void XulyNhan(View view){
+    public void XuLyNhan(View view){
         String sothunhat = edt1.getText().toString();
         String sothuhai = edt2.getText().toString();
 
-        float a = Integer.parseInt(sothunhat);
-        float b = Integer.parseInt(sothuhai);
-        float c = a * b;
-        edtKetQua.setText(String.valueOf(c));
+        float a = Float.parseFloat(sothunhat);
+        float b = Float.parseFloat(sothuhai);
+        float Nhan = a * b;
+        String chuoiKQ = String.valueOf(Nhan);
+        edtKetQua.setText(String.valueOf(chuoiKQ));
     }
-    void XulyChia(View view){
+    public void XuLyChia(View view){
         String sothunhat = edt1.getText().toString();
         String sothuhai = edt2.getText().toString();
 
-        float a = Integer.parseInt(sothunhat);
-        float b = Integer.parseInt(sothuhai);
-        float c = a / b;
-        edtKetQua.setText(String.valueOf(c));
+        float a = Float.parseFloat(sothunhat);
+        float b = Float.parseFloat(sothuhai);
+        float Chia = a / b;
+        String chuoiKQ = String.valueOf(Chia);
+        edtKetQua.setText(String.valueOf(chuoiKQ));
     }
 
 }

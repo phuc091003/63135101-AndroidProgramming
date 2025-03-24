@@ -71,10 +71,12 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="10dp"
         android:text="+"
+        android:onClick="XuLyCong"
         app:layout_constraintEnd_toStartOf="@+id/btnTru"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt2" />
+        app:layout_constraintTop_toBottomOf="@+id/edt2"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btnTru"
@@ -83,8 +85,10 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="10dp"
         android:text="-"
+        android:onClick="XuLyTru"
         app:layout_constraintEnd_toStartOf="@+id/btnNhan"
-        app:layout_constraintTop_toBottomOf="@+id/edt2" />
+        app:layout_constraintTop_toBottomOf="@+id/edt2"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btnNhan"
@@ -93,8 +97,10 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="10dp"
         android:text="*"
+        android:onClick="XuLyNhan"
         app:layout_constraintEnd_toStartOf="@+id/btnChia"
-        app:layout_constraintTop_toBottomOf="@+id/edt2" />
+        app:layout_constraintTop_toBottomOf="@+id/edt2"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btnChia"
@@ -103,8 +109,10 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:text="/"
+        android:onClick="XuLyChia"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt2" />
+        app:layout_constraintTop_toBottomOf="@+id/edt2"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/textView"
