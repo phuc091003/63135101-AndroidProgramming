@@ -9,6 +9,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import com.example.recyclerview.LandScape;
+import com.example.recyclerview.LandScapeAdapter;
+import com.example.recyclerview.R;
 
 public class MainActivity extends AppCompatActivity {
     LandScapeAdapter landScapeAdapter;
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         LandScape landScape1 = new LandScape("flag_tower_of_HaNoi","Cột cờ Hà Nội");
         dsDuLieu.add(landScape1);
         dsDuLieu.add(new LandScape("effel","Tháp effel"));
-        dsDuLieu.add(new LandScape("Bukingham","Cung Điện Bukingham"));
+        dsDuLieu.add(new LandScape("Buckingham","Cung Điện Buckingham"));
         dsDuLieu.add(new LandScape("statue_of_liberty","Tượng nữ thần tự do"));
         return dsDuLieu;
     }
