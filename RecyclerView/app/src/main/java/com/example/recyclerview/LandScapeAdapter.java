@@ -34,13 +34,18 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         LandScape landScapeHienThi = lstData.get(position);
         //trich thong tin
         String caption = landScapeHienThi.getLandCation();
-        String tenAnh = landScapeHienThi.getLandImageFileName();
+        String tenFileAnh = landScapeHienThi.getLandImageFileName();
+        holder.tvCaption.setText(caption);
+        // dat anh
+        String packageName = holder.itemView.getContext().getPackageName();
+        int imageID = holder.itemView.getResources().getIdentifier(tenFileAnh, "mipmap", packageName);
+        holder.ivLandscape.setImageResource(imageID);
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstData.size();
     }
 
     class ItemLandHolder extends RecyclerView.ViewHolder {
