@@ -12,7 +12,7 @@ import com.example.recyclerview.R;
 import com.example.recyclerview.LandScape;
 
 
-public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.ItemViewHolder> {
+public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.ItemLandHolder> {
     Context context;
     ArrayList<LandScape> lstData;
     public LandScapeAdapter(Context context, ArrayList<LandScape> lstData) {
@@ -22,7 +22,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
 
     @NonNull
     @Override
-    public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ItemLandHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater cai_bom = LayoutInflater.from(context);
         View vItem = cai_bom.inflate(R.layout.item_land, parent, false);
         ItemLandHolder viewholderCreated = new ItemLandHolder(vItem);
@@ -30,8 +30,11 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
-        
+    public void onBindViewHolder(@NonNull ItemLandHolder holder, int position) {
+        LandScape landScapeHienThi = lstData.get(position);
+        //trich thong tin
+        String caption = landScapeHienThi.getLandCation();
+        String tenAnh = landScapeHienThi.getLandImageFileName();
 
     }
 
@@ -40,13 +43,15 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         return 0;
     }
 
-    class ItemViewHolder extends RecyclerView.ViewHolder {
+    class ItemLandHolder extends RecyclerView.ViewHolder {
         TextView tvCaption;
         ImageView ivLandscape;
-        public ItemViewHolder(@NonNull View itemView) {
+        public ItemLandHolder(@NonNull View itemView) {
             super(itemView);
             tvCaption = itemView.findViewById(R.id.textViewCaption);
             ivLandscape = itemView.findViewById(R.id.imageViewLand);
         }
     }
+
+
 }
