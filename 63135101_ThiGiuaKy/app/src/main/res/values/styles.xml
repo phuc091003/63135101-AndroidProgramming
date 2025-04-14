@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Màu sắc -->
+    <color name="primary_color">#D32F2F</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="light_gray">#F5F5F5</color>
+
+    <!-- Định nghĩa style cho nhãn thông tin -->
+    <style name="ProfileLabel">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- Định nghĩa style cho giá trị thông tin -->
+    <style name="ProfileValue">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF5733</color> <!-- Màu đỏ cam -->
+    <color name="blue">#33A1FF</color> <!-- Màu xanh dương -->
+    <color name="green">#33FF57</color> <!-- Màu xanh lá -->
+    <color name="yellow">#FFC733</color> <!-- Màu vàng -->
+    <color name="purple">#6200EE</color>
+    <color name="background">#E0E0E0</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity_chucnang5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi đơn vị độ dài"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/conversion_icon"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+    <EditText
+        android:id="@+id/input_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giá trị"
+        android:inputType="numberDecimal"
+        android:padding="10dp"/>
+    <Spinner
+        android:id="@+id/from_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Spinner
+        android:id="@+id/to_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chuyển đổi"
+        android:backgroundTint="#921010"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:hint="Kết quả"
+        android:paddingTop="16dp"/>
+
+
+</LinearLayout>

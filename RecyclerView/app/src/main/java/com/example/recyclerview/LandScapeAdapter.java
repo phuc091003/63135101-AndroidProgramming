@@ -1,4 +1,5 @@
 package com.example.recyclerview;
+import android.annotation.SuppressLint;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -35,10 +36,11 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         //trich thong tin
         String caption = landScapeHienThi.getLandCation();
         String tenFileAnh = landScapeHienThi.getLandImageFileName();
+        tenFileAnh = tenFileAnh.replace(" ","_");
         holder.tvCaption.setText(caption);
         // dat anh
         String packageName = holder.itemView.getContext().getPackageName();
-        int imageID = holder.itemView.getResources().getIdentifier(tenFileAnh, "mipmap", packageName);
+        int imageID = holder.itemView.getResources().getIdentifier(tenFileAnh, "drawable", packageName);
         holder.ivLandscape.setImageResource(imageID);
 
     }
