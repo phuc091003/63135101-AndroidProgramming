@@ -3,9 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A7EDE7">
+    <ImageView
+        android:id="@+id/image_splash"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:src="@drawable/splash_jar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitCenter" />
 
 
-    
 
 
 </RelativeLayout>
