@@ -3,14 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A7EDE7">
+
     <ImageView
         android:id="@+id/image_splash"
-        android:layout_width="250dp"
-        android:layout_height="300dp"
-        android:src="@drawable/splash_jar"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash_jar" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_below="@+id/image_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple solution for your budget."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:scaleType="fitCenter" />
+        android:layout_marginTop="32dp"/>
+        />
 
 
 
