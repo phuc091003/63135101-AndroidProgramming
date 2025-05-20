@@ -3,9 +3,9 @@ package com.example.appchitieu_final;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
             // Sau này mở activity hoặc fragment thêm giao dịch
         });
     }
-    
-    private void loadFragment(TransactionFragment fragment) {
-        getSupportFragmentManager().beginTransaction()
+
+    private void loadFragment(Fragment fragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
                 .replace(R.id.fragment_container, fragment)
                 .commit();
     }
-}
