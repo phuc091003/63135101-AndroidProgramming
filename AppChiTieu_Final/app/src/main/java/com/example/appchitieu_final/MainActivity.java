@@ -26,23 +26,23 @@ public class MainActivity extends AppCompatActivity {
         // Load mặc định HomeFragment
         loadFragment(new HomeFragment());
 
-        bottomNav.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.nav_home:
-                    loadFragment(new HomeFragment());
-                    return true;
-                case R.id.nav_transaction:
-                    loadFragment(new TransactionFragment());
-                    return true;
-                case R.id.nav_statistics:
-                    loadFragment(new StatisticsFragment());
-                    return true;
-                case R.id.nav_profile:
-                    loadFragment(new ProfileFragment());
-                    return true;
-            }
-            return false;
-        });
+//        bottomNav.setOnNavigationItemSelectedListener(item -> {
+//            switch (item.getItemId()) {
+//                case R.id.nav_home:
+//                    loadFragment(new HomeFragment());
+//                    return true;
+//                case R.id.nav_transaction:
+//                    loadFragment(new TransactionFragment());
+//                    return true;
+//                case R.id.nav_statistics:
+//                    loadFragment(new StatisticsFragment());
+//                    return true;
+//                case R.id.nav_profile:
+//                    loadFragment(new ProfileFragment());
+//                    return true;
+//            }
+//            return false;
+//        });
 
         fab.setOnClickListener(v -> {
             Toast.makeText(this, "Thêm giao dịch", Toast.LENGTH_SHORT).show();
@@ -56,3 +56,4 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragment_container, fragment)
                 .commit();
     }
+}
